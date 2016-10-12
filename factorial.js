@@ -10,6 +10,7 @@ function fact(n) {
         return n * fact(n-1);
     }
 }
+
 var theChosenNumber = fact(7);
 
 console.log(fact(7));
@@ -19,8 +20,6 @@ console.log(fact(4));
 console.log(fact(3));
 console.log(fact(2));
 console.log(fact(1));
-
-document.getElementById('factorial7').innerText = theChosenNumber;
 
    /*
       fact(7) : not <= 1 so, 7 * fact(6)
@@ -32,7 +31,10 @@ document.getElementById('factorial7').innerText = theChosenNumber;
       fact(1) : is == 1 so, return 1 and stop here;
 
     */
-   /* When we put the function operation above together we get:
+   /* When we put the iterations from the function operation from above together, we get:
       7 * 6 * 5 * 4 * 3 * 2 * 1 = 5040
       let's run to make sure
     */
+
+document.getElementById('factorial7').innerText = theChosenNumber;
+
